@@ -1,0 +1,71 @@
+.btn {
+    height: 2rem;
+    width: 8rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0.5px 0.5px 2px black;
+    transition:background-color 0.4s ease-in, transform 0.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-top: 2rem;
+    height: 25rem;
+    width: 30rem;
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px 2px rgba(0,0,0,0.4);
+    padding: 2rem;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-in, background-color 0.4s, color 0.4s;
+    text-transform: capitalize;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+.form {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form input {
+    width: 50%;
+}
+
+.form input[type="text"], .form input[type="email"] ,.form input[type="password"], .form select{
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none;
+    height: 1.8rem;
+    transition: border 0.4s;
+    font-family: inherit;
+    outline: none;
+}
+
+.form input:focus {
+    outline: none;
+    border: 1px solid #ad1515;
+}
