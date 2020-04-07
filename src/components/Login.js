@@ -11,6 +11,16 @@ class Login extends Component {
         }
     }
 
+    componentDidMount() {
+        if(this.props.location.state)
+            alert(this.props.location.state.alert)
+        if(this.props.auth.authenticated) {
+            alert("You are logged in");
+            const from = this.props.location.state?this.props.location.state.from:'/';
+            this.props.history.push(from);
+        }
+    }
+
     handleValueChange = (eve) => {
         this.setState({
             [eve.target.name] : eve.target.value
@@ -23,10 +33,13 @@ class Login extends Component {
         if(this.props.auth.authenticated)
         {
             alert("Login successful"); 
-            this.props.history.push('/');
+            const from = this.props.location.state?this.props.location.state.from:'/';
+            this.props.history.push(from);
         }
-        else
-            alert("Oops! Something went wrong");
+        else {
+            alert(this.props.auth.error.message)
+            this.props.history.push('/login');
+        }
         this.setState({
             email: '',
             password: ''
