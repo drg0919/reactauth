@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "356452acf96368b15a95142b52e60dba",
+    "revision": "f627c902ed4f7bcabc59bc64bd75fc17",
     "url": "/reactauth/index.html"
   },
   {
-    "revision": "3a24217e3506e2bd1086",
+    "revision": "81d2ce33fba50cf67071",
     "url": "/reactauth/static/css/main.c910d6f0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactauth/static/js/2.ede85560.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3a24217e3506e2bd1086",
-    "url": "/reactauth/static/js/main.a6c212b4.chunk.js"
+    "revision": "81d2ce33fba50cf67071",
+    "url": "/reactauth/static/js/main.8dc3e625.chunk.js"
   },
   {
     "revision": "4d79feb3cbeaa49cd7c3",
