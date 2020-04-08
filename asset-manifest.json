@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reactauth/static/css/main.c910d6f0.chunk.css",
+    "main.js": "/reactauth/static/js/main.a6c212b4.chunk.js",
+    "main.js.map": "/reactauth/static/js/main.a6c212b4.chunk.js.map",
+    "runtime-main.js": "/reactauth/static/js/runtime-main.86c6682f.js",
+    "runtime-main.js.map": "/reactauth/static/js/runtime-main.86c6682f.js.map",
+    "static/js/2.ede85560.chunk.js": "/reactauth/static/js/2.ede85560.chunk.js",
+    "static/js/2.ede85560.chunk.js.map": "/reactauth/static/js/2.ede85560.chunk.js.map",
+    "index.html": "/reactauth/index.html",
+    "precache-manifest.09a0addf2e16fe9d077552199428d17e.js": "/reactauth/precache-manifest.09a0addf2e16fe9d077552199428d17e.js",
+    "service-worker.js": "/reactauth/service-worker.js",
+    "static/css/main.c910d6f0.chunk.css.map": "/reactauth/static/css/main.c910d6f0.chunk.css.map",
+    "static/js/2.ede85560.chunk.js.LICENSE.txt": "/reactauth/static/js/2.ede85560.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86c6682f.js",
+    "static/js/2.ede85560.chunk.js",
+    "static/css/main.c910d6f0.chunk.css",
+    "static/js/main.a6c212b4.chunk.js"
+  ]
+}
