@@ -22,11 +22,12 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route exact path="/" component={() => homePage()} />
-        <Route exact path="/public-route" component={(rpr) => <Canvas {...rpr}><h1>This is a public route</h1></Canvas>} />
-        <Route exact path="/login" component={(rpr) => <Canvas><Login {...rpr}/></Canvas>} />
-        <PrivateRoute exact path="/protected-route-1" component={Private} alert="Please login to continue"/>
-        <PrivateRoute exact path="/protected-route-2" component={Protected} alert="Please login to continue"/>
+        <Route exact path="/reactauth/" component={() => homePage()} />
+        <Route exact path="/reactauth/public-route" component={(rpr) => <Canvas {...rpr}><h1>This is a public route</h1></Canvas>} />
+        <Route exact path="/reactauth/login" component={(rpr) => <Canvas><Login {...rpr}/></Canvas>} />
+        <PrivateRoute exact path="/reactauth/protected-route-1" component={Private} alert="Please login to continue"/>
+        <PrivateRoute exact path="/reactauth/protected-route-2" component={Protected} alert="Please login to continue"/>
+        <Route path="*" component={() => <Canvas><h2>404! Not found</h2></Canvas>} />
       </Switch>
     </div>
   );

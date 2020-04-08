@@ -16,7 +16,7 @@ class Login extends Component {
             alert(this.props.location.state.alert)
         if(this.props.auth.authenticated) {
             alert("You are logged in");
-            const from = this.props.location.state?this.props.location.state.from:'/';
+            const from = this.props.location.state?this.props.location.state.from:'/reactauth/';
             this.props.history.push(from);
         }
     }
@@ -33,12 +33,12 @@ class Login extends Component {
         if(this.props.auth.authenticated)
         {
             alert("Login successful"); 
-            const from = this.props.location.state?this.props.location.state.from:'/';
+            const from = this.props.location.state?this.props.location.state.from:'/reactauth/';
             this.props.history.push(from);
         }
         else {
             alert(this.props.auth.error.message)
-            this.props.history.push('/login');
+            this.props.history.push('/reactauth/login');
         }
         this.setState({
             email: '',

@@ -6,7 +6,7 @@ import Canvas from './components/Canvas';
 const PrivateRoute = ({component:Component,alert, authenticated, ...rest}) => {
     return (
        <Route {...rest} render={(rpr) => (
-           authenticated===true?<Canvas><Component {...rpr}/></Canvas>:<Redirect to={{pathname: "/login", state:{from: rpr.location.pathname, alert: alert}}} />
+           authenticated===true?<Canvas><Component {...rpr}/></Canvas>:<Redirect to={{pathname: "/reactauth/login", state:{from: rpr.location.pathname, alert: alert}}} />
        )} />
     )
 }
